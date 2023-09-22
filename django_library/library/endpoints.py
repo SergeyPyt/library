@@ -51,6 +51,5 @@ class BooksOver(ListCreateAPIView):
 
 
 """
-   реализовать систему авторизации(2 формы(авторизация и регистрация и views)
    JWT auth почитать
 """
