@@ -16,6 +16,9 @@ class RegistrationView(TemplateView):
     def post(self, request):
         form = UserRegistrationForm(request.POST)
 
+        if not form["data"]:
+            return
+
         if form.is_valid():
             form.save()
             username = form.cleaned_data['username']
